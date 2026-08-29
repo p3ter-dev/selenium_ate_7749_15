@@ -71,7 +71,6 @@ public class LoginPage extends BasePage {
         return isDisplayed(errorMessage);
     }
 
-    // Direct element verification methods for locator strategy tests (T2)
     public boolean isUsernameFieldPresent() {
         return isDisplayed(usernameField);
     }
