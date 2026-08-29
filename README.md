@@ -1,7 +1,7 @@
 # Selenium End-to-End Automated Testing Suite & Report
 
 **Course:** Software Testing and Validation and Quality Assurance
-**Institution:** Addis Ababa University, School of Information Technology and Engineering
+**Institution:** Addis Ababa University, School of Information Technology and Engineering <br/>
 **Name:** Peter Kinfe
 **Student ID:** `ATE/7749/15`  
 **Target Application:** [ParaBank](https://parabank.parasoft.com/parabank/index.htm)
