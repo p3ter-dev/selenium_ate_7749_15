@@ -9,8 +9,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 /**
- * BasePage provides reusable explicit wait and interaction methods for all Page Objects.
- * Strictly adheres to requirement T5 (explicit waits with ExpectedConditions, 0 Thread.sleep).
+ * BasePage provides reusable explicit wait and interaction methods for all Page
+ * Objects.
+ * Strictly adheres to requirement T5 (explicit waits with ExpectedConditions, 0
+ * Thread.sleep).
  */
 public abstract class BasePage {
     protected WebDriver driver;
