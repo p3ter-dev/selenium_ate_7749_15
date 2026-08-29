@@ -55,9 +55,9 @@ public class RegisterPage extends BasePage {
     }
 
     public void fillRegistrationForm(String firstName, String lastName, String address,
-                                     String city, String state, String zipCode,
-                                     String phone, String ssn, String username,
-                                     String password, String confirmPassword) {
+            String city, String state, String zipCode,
+            String phone, String ssn, String username,
+            String password, String confirmPassword) {
         type(firstNameField, firstName);
         type(lastNameField, lastName);
         type(addressField, address);
@@ -76,9 +76,9 @@ public class RegisterPage extends BasePage {
     }
 
     public void registerNewUser(String firstName, String lastName, String address,
-                                String city, String state, String zipCode,
-                                String phone, String ssn, String username,
-                                String password) {
+            String city, String state, String zipCode,
+            String phone, String ssn, String username,
+            String password) {
         fillRegistrationForm(firstName, lastName, address, city, state, zipCode,
                 phone, ssn, username, password, password);
         clickRegisterButton();
