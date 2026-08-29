@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import java.time.Duration;
 
 /**
- * BaseTest manages test lifecycle (T8 requirement):
+ * T8: proper JUnit lifecycle management
  * - Initializes a fresh browser session in @BeforeEach
  * - Tears down and quits the browser session in @AfterEach
  * - Supports headless mode for CI/CD environments
@@ -27,7 +27,6 @@ public abstract class BaseTest {
         options.addArguments("--disable-gpu");
         options.addArguments("--window-size=1920,1080");
 
-        // Allow headless execution via system property or environment variable
         String headless = System.getProperty("headless", "true");
         if ("true".equalsIgnoreCase(headless)) {
             options.addArguments("--headless=new");
@@ -35,7 +34,7 @@ public abstract class BaseTest {
 
         driver = new ChromeDriver(options);
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0)); // 0 implicit wait to ensure only explicit waits are tested
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
         driver.manage().window().maximize();
     }
 
