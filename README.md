@@ -1,11 +1,10 @@
 # Selenium End-to-End Automated Testing Suite & Report
 
-**Course:** Software Testing and Validation  
-**Institution:** Addis Ababa University, School of Information Technology and Engineering  
+**Course:** Software Testing and Validation and Quality Assurance
+**Institution:** Addis Ababa University, School of Information Technology and Engineering
+**Name:** Peter Kinfe
 **Student ID:** `ATE/7749/15`  
-**Target Application:** [ParaBank](https://parabank.parasoft.com/parabank/index.htm)  
-**Submission Package:** `selenium_ate_7749_15.zip` and `selenium_ate_7749_15.pdf`  
-**GitHub Repository:** `https://github.com/peter/selenium_ate_7749_15`
+**Target Application:** [ParaBank](https://parabank.parasoft.com/parabank/index.htm)
 
 ---
 
@@ -26,34 +25,7 @@ This repository contains an end-to-end automated testing suite written in **Java
 
 ---
 
-## 2. Directory Structure
-
-```text
-selenium_ate_7749_15/
-├── pom.xml
-├── README.md
-├── generate_report.py
-├── selenium_ate_7749_15.pdf
-├── selenium_ate_7749_15.zip
-└── src/
-    ├── main/
-    │   └── java/
-    │       └── com/aau/testing/pages/
-    │           ├── BasePage.java
-    │           ├── LoginPage.java
-    │           ├── RegisterPage.java
-    │           ├── AccountsOverviewPage.java
-    │           └── TransferFundsPage.java
-    └── test/
-        └── java/
-            └── com/aau/testing/
-                ├── BaseTest.java
-                └── ParaBankAutomationTests.java
-```
-
----
-
-## 3. How to Run the Tests
+## 2. How to Run the Tests
 
 ### Prerequisites
 - **Java JDK 17 or 21+** installed and configured on `PATH`.
@@ -79,7 +51,7 @@ mvn test -Dtest=ParaBankAutomationTests#testT3_PositivePathEndToEndFlow
 
 ---
 
-## 4. Test Report & Submission Details
+## 3. Test Report & Submission Details
 
 - **Report PDF:** `selenium_ate_7749_15.pdf` (2-page report including site justification, test matrix table, Equivalence Partitioning design table, usability defects, and green execution log).
 - **Archive:** `selenium_ate_7749_15.zip`
